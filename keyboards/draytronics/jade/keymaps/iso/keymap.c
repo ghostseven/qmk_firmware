@@ -28,8 +28,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,    KC_SCLN, KC_QUOT,  KC_NUHS, KC_ENT,   KC_PGUP,
       /* shift     \       Z         X        C       V       B       N      M        ,        .        /        shift     up      pg dn*/
       KC_LSFT, KC_NUBS, KC_Z,    KC_X,    KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT, KC_UP,    KC_PGDN,
-       /* ctrl     win      alt                   space                            alt      fn       ctrl      left     down     right*/
-      KC_LCTL, KC_LGUI, KC_LALT,                  KC_SPC,                         KC_RALT, MO(1), KC_RCTL,  KC_LEFT, KC_DOWN,  KC_RIGHT),
+       /* ctrl     alt     win                   space                            alt      fn       ctrl      left     down     right*/
+      KC_LCTL, KC_LALT, KC_LGUI,                  KC_SPC,                         KC_RALT, KC_RCTL, MO(1),  KC_LEFT, KC_DOWN,  KC_RIGHT),
 
   [1] = LAYOUT_65_iso(
      /* ~      F1       F2      F3        F4      F5      F6      F7      F8      F9       F0       F11       F12      del       `print scr  */
@@ -41,6 +41,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      /* shift     \       Z         X       C        V       B       N      M        ,        .        /        shift   vol  up   end*/
       KC_LSFT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_MUTE, KC_TRNS, KC_TRNS, KC_TRNS,  KC_RSFT, KC_VOLU,  KC_END,
      /* ctrl     win      alt                      space                            alt      fn       ctrl      left    vol down  right*/
-      KC_LCTL, KC_LGUI, KC_LALT,                  KC_TRNS,                         KC_RALT, KC_TRNS, KC_RCTL,  KC_TRNS, KC_VOLD,  KC_TRNS)
+      KC_LCTL, KC_LALT, KC_LGUI,                  KC_TRNS,                         KC_RALT, KC_RCTL, KC_TRNS,  KC_TRNS, KC_VOLD,  KC_TRNS)
 };
-

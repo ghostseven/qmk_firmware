@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 15
-
+#define USB_MAX_POWER_CONSUMPTION 200
 /*
  * Keyboard Matrix Assignments
  *
